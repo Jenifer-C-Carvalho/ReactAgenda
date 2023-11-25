@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Playfair+Display:wght@500&display=swap');
+
+/* Regras do CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Criando Variáveis */
+:root {
+  --cor-tabela: #FFB9B9;
+  --cor-botao: #ea7f7f;
+  --cor-remove: #FF6969;
+  --cor-complete: #FF9494;
+  --cor-de-texto: white;
+  --texto-titulo: 'Merriweather Sans', sans-serif;
+  --texto-paragrafo: 'Playfair Display', serif;
+}
+
+/* Estilizando o corpo da página */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./img/panda.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Estilizando o formulário/tabela da agenda */
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--cor-tabela);
+  padding: 20px 30px;
+  border-radius: 10px;
+
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--texto-titulo);
+  font-size: 30px;
+  color: var(--cor-de-texto);
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 10px 0;
+  font-family: var(--texto-paragrafo);
+  font-size: 18px;
+  color: var(--cor-de-texto);
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-family: var(--texto-titulo);
+  font-size: 20px;
+  color: var(--cor-de-texto);
+}
+
+input {
+  font-family: var(--texto-paragrafo);
+  color: var(--cor-de-texto);
+  font-size: 15px;
+  background-color: var(--cor-botao);
+}
+
+button {
+  background-color: var(--cor-botao);
+  color: var(--cor-de-texto);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .35s;
+  font-size: 15px;
+  font-family: var(--texto-paragrafo);
+  margin-left: 10px;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+  opacity: 4;
+  transform: scale(0.9);
+}
+
+.todo-list{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 3px dashed var(--cor-de-texto);
+  }
+  
+  .todo{
+    box-shadow: 0 0 10px var(--cor-botao);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.complete {
+  background-color: var(--cor-complete);
+}
+
+.remove{
+  background-color: var(--cor-remove);
+}
+
+
+todo-form {
+  padding-bottom: 1.5rem;
+}
+
+input,
+select {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid var(--cor-de-texto);
+  border-radius: 3px;
+  width: 100%
+}
+
